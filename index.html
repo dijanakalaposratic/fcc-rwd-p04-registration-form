@@ -19,10 +19,23 @@
             request body (with method="post"). --> 
 
             <fieldset>
-                <label for="">Enter Your First Name:</label>
-                <label for="">Enter Your Last Name:</label>
-                <label for="">Enter Your Email:</label>
-                <label for="">Create a New Password:</label>
+
+                <label for="first-name">Enter Your First Name: 
+                    <input type="text" id="first-name" required>
+                </label>
+
+                <label for="last-name">Enter Your Last Name: 
+                    <input type="text" id="last-name" required>
+                </label>
+
+                <label for="email">Enter Your Email: 
+                    <input type="email" id="email" required>
+                </label>
+                
+                <label for="new-password">Create a New Password: 
+                    <input type="password" id="new-password" required>
+                </label>
+
             </fieldset>
 
 
@@ -34,6 +47,8 @@
             <fieldset>
 
             </fieldset>
+
+            <input type="submit" value="Submit">
 
         </form>
     </body>
