@@ -56,16 +56,16 @@
             
             
             <fieldset>
-                <label for=""> Upload a profile picture: 
-                    <input type="file">
+                <label for="profile-picture"> Upload a profile picture: 
+                    <input type="file" id="profile-picture">
                 </label>
 
-                <label for=""> Input your age (years): 
-                    <input type="number" min="13" max="120">
+                <label for="age"> Input your age (years): 
+                    <input type="number" min="13" max="120" id="age">
                 </label>
 
-                <label for=""> How did you hear about us?
-                    <select name="" id="">
+                <label for="referrer"> How did you hear about us?
+                    <select id="referrer">
                         <option value="">(select one)</option>
                         <option value="1">freeCodeCamp News</option>
                         <option value="2">freeCodeCamp YouTube Channel</option>
@@ -74,6 +74,10 @@
                         <!-- Each <option> element should have a value attribute containing the data value to submit to the server when that option is selected.
                             If no value attribute is included, the value defaults to the text contained inside the element. -->
                     </select>
+                </label>
+
+                <label for="bio"> Provide a bio: 
+                    <textarea name="" id="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>
                 </label>
 
             </fieldset>
