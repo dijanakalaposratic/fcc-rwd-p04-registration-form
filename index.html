@@ -21,19 +21,19 @@
             <fieldset>
 
                 <label for="first-name">Enter Your First Name: 
-                    <input type="text" id="first-name" required>
+                    <input type="text" id="first-name" name="first-name" required>
                 </label>
 
                 <label for="last-name">Enter Your Last Name: 
-                    <input type="text" id="last-name" required>
+                    <input type="text" id="last-name" name="last-name" required>
                 </label>
 
                 <label for="email">Enter Your Email: 
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                 </label>
                 
                 <label for="new-password">Create a New Password: 
-                    <input type="password" id="new-password" required pattern="[a-z0-5]{8,}">
+                    <input type="password" id="new-password" name="new-password" required pattern="[a-z0-5]{8,}">
                 </label>
 
             </fieldset>
@@ -45,26 +45,28 @@
                 </label>
 
                 <label for="business-account">
-                    <input type="radio" id="business-account" name="account-type"> Business Account  <!-- Giving both radio <inputs> the same name attribute makes them
-                                                                                related to each other and only one possible to choose at the time. -->
+                    <input type="radio" id="business-account" name="account-type"> Business Account  <!-- Giving both radio <inputs> the same name attribute makes
+                                                                                                    them related to each other and only one possible to choose
+                                                                                                    at the time. -->
                 </label>
 
                 <label for="terms-and-conditions">
-                    <input type="checkbox" id="terms-and-conditions"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                    <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions">
+                    I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
                 </label>
             </fieldset>
             
             
             <fieldset>
                 <label for="profile-picture"> Upload a profile picture: 
-                    <input type="file" id="profile-picture">
+                    <input type="file" id="profile-picture" name="profile-picture">
                 </label>
 
                 <label for="age"> Input your age (years): 
-                    <input type="number" min="13" max="120" id="age">
+                    <input type="number" min="13" max="120" id="age" name="age">
                 </label>
 
-                <label for="referrer"> How did you hear about us?
+                <label for="referrer" name="referrer" > How did you hear about us?
                     <select id="referrer">
                         <option value="">(select one)</option>
                         <option value="1">freeCodeCamp News</option>
@@ -76,13 +78,13 @@
                     </select>
                 </label>
 
-                <label for="bio"> Provide a bio: 
-                    <textarea name="" id="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>
+                <label for="bio" id=""> Provide a bio: 
+                    <textarea name="" id="bio" name="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>
                 </label>
 
             </fieldset>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit-button" name="submit-button">
 
         </form>
     </body>
