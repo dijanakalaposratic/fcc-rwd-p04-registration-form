@@ -15,3 +15,15 @@ label {
                         a specified font-size, the browser default value of 16px is used.
                         https://www.geeksforgeeks.org/difference-between-em-and-rem-units-in-css/ */
 }
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+}
